@@ -12,6 +12,10 @@ plugins {
     id 'eclipse'
 }
 
+// 必要に応じてエンコーディングを指定
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+
 repositories {
     jcenter()
 }
