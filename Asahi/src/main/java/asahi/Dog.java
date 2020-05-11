@@ -7,7 +7,17 @@ public class Dog {
 	
 	private String name;
 
-	@Setter @Getter
+	/**
+	 * Javaのスタンダードではメソッド名は小文字で始まる
+	 * Getter, Setterはそれぞれ
+	 * 
+	 * getName, setName とする。
+	 * 
+	 * ほんでGetterとSetterはlombokに自動生成させると良い。
+	 * アノテーションでgetAge, setAgeが自動生成される。
+	 * @Getterのみ、@Setterのみも勿論可能。
+	 */
+	@Getter @Setter
 	private int age;
 	
 	//名前のset
